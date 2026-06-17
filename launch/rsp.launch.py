@@ -27,11 +27,11 @@ def generate_launch_description():
     }
 
     # Joint State Publisher
-    node_joint_state_publisher = Node(
-     package='joint_state_publisher_gui',
-     executable='joint_state_publisher_gui',
-     output='screen'
-    )
+    #node_joint_state_publisher = Node(
+     #package='joint_state_publisher_gui',
+     #executable='joint_state_publisher_gui',
+     #output='screen'
+    #)
 
     # Robot State Publisher
     node_robot_state_publisher = Node(
@@ -48,6 +48,6 @@ def generate_launch_description():
             description='Use sim time if true'
         ),
 
-        node_joint_state_publisher,
+        #node_joint_state_publisher,
         node_robot_state_publisher
     ])
